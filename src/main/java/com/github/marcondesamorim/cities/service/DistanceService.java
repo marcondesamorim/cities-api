@@ -34,7 +34,7 @@ public class DistanceService {
     }
 
     public City nearest(final Long city) {
-        List<City> cities = cityRepository.findAll();
+        List<City> cities = cityRepository.findAllAdapted();
         City nearestCity = null;
         Double nearest = 40075.00; //circumference of the earth in kilometers
         Double distance;
